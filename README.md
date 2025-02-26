@@ -15,8 +15,7 @@ A **URL Shortener** built with **FastAPI** that allows users to create short URL
   - [Shorten URL](#1-shorten-url)  
   - [Redirect](#2-redirect)  
   - [Get Analytics](#3-get-analytics)  
-- [Worker (Analytics Consumer)](#worker-analytics-consumer)  
-- [Environment Variables](#environment-variables)  
+- [Worker (Analytics Consumer)](#worker-analytics-consumer)   
 - [License](#license)
 
 ---
@@ -231,20 +230,6 @@ A **URL Shortener** built with **FastAPI** that allows users to create short URL
 python worker/worker.py
 ```
 (Or automatically via Docker Compose.)
-
----
-
-## Environment Variables
-
-Typical variables (in `.env` or set in Docker Compose):
-
-- `DATABASE_URL=postgresql://postgres:postgres@db:5432/short_db`  
-- `REDIS_HOST=redis`  
-- `REDIS_PORT=6379`  
-- `RABBITMQ_HOST=rabbitmq`  
-- `RABBITMQ_PORT=5672`  
-- `EXPIRE_DAYS=8` (if you want a dynamic environment-based expiry)  
-- `ACCESS_KEY` (for geo-IP services, if used)
 
 ---
 
